@@ -1,0 +1,56 @@
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90vw;
+  gap: 2rem;
+}
+
+.movies__movie {
+  display: flex;
+  align-items: flex-start;
+  width: 40rem;
+  height: 22rem;
+  background-color: white;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.movies__movie:hover {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  transform: translateY(-1rem);
+}
+
+.movies__movie > img {
+  height: 22rem;
+}
+
+.movie__data {
+  padding: 1rem;
+}
+
+.movie__title {
+  font-size: 2rem;
+}
+
+.movie__year {
+  font-size: 1.4rem;
+}
+
+.movie__summary {
+  text-overflow: ellipsis;
+  font-size: 1.2rem;
+}
+
+.genres {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+.genres__genre {
+  margin-right: 0.5rem;
+}
